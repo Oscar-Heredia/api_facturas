@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+</head>
+<body>
+
+<div id="app">
+
+    <div id="productos">
+        <div id="detProdutos"></div>
+        <form action="" id="frmproductos">
+            <label for="lblproducto">Nombre producto:
+                <input type="text" id="txtnproducto">
+            </label>
+            <br>
+            <label for="lblprecio">Precio del producto:
+                <input type="text" id="txtnprecio">
+            </label>
+            <br>
+            <label for="lblcantidad">Cantidad del producto:
+                <input type="text" id="txtncantidad">
+            </label>
+
+            <button type="button" id="btnAgregarproduct">Agregar producto</button>
+            <button type="reset" id="btnCancelarproducto">Cancelar producto</button>
+        </form>
+    </div>
+    <br>
+    <div id="clientes">
+        <div id="detclientes"></div>
+        <form action="" id="frmclientes">
+            <label for="lblcliente">Nombre cliente:
+                <input type="text" id="txtnCliente">
+            </label>
+            <br>
+            <label for="lblcliente">Zipcode del cliente:
+                <input type="text" id="txtnZipcodecliente">
+            </label>
+            <br>
+            <label for="lblcliente">RFC del cliente:
+                <input type="text" id="txtnRfccliente">
+            </label>
+            <button type="button" id="btnAgregarcliente">Agregar cliente</button>
+            <button type="reset" id="btnCancelarproducto">Eliminar cliente</button>
+        </form>
+    </div>
+    <br>
+    <div id="Cargarclientes">
+        <button type="button" id="btnCargarclientes">Cargarclientes</button>
+        <select name="" id="slcClientes"></select>
+        <br>
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre del cliente</th>
+                        <th>Zipcode del cliente</th>
+                        <th>RFC del cliente</th>
+                    </tr>
+                </thead>
+                <tbody id="data2"></tbody>
+            </table>
+        </div>
+    </div>
+    <br>
+    <div id="Cargarproductos">
+        <button type="button" id="btnCargarproductos">Cargarproductos</button>
+        <select name="" id="slcProductos"></select>
+        <select name="" id="slcProductoscantidad"></select>
+        <br>
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Cantidad</th>
+                            <th>Costo</th>
+                        </tr>
+                    </thead>
+                    <tbody id="data"></tbody>
+                </table>
+            </div>
+        </div>
+    <br>
+ </div>
+</body>
+    <script src="./js/app.js"></script>
+</html>
